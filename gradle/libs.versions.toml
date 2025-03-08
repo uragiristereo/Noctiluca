@@ -1,0 +1,17 @@
+[versions]
+kotlin = "2.1.0"
+gradle = "8.7.3"
+compose = "1.7.3"
+activity = "1.9.3"
+
+
+[libraries]
+activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+
+
+[plugins]
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "gradle" }
+androidLibrary = { id = "com.android.library", version.ref = "gradle" }
